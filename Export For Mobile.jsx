@@ -27,7 +27,7 @@ function main() {
 	var openDialog = app.openDialog();
 
 	// FIXME: Remove file var and replace with doc...
-	var doc, file, name, filename, type, folder, width, height, state;
+	var doc, file, name, filename, type, folder, _folder, width, height, state;
 	var numFiles = openDialog.length;
 	//alert("Num Files Opened: "+numFiles);
 	for(var i = 0; i < numFiles; i++)
@@ -43,6 +43,9 @@ function main() {
 		type = name.lastIndexOf(".");
 		filename = name.substr(0, type); // remove file extension
 		folder = doc.path;
+
+		_folder = new Folder(folder);
+		if(!_folder.exists) _folder.create();
 
 		// FIXME: Clear slices to allow output. Otherwise figure out how to rename slice names...
 		if(type == "psd") app.runMenuItem(stringIDToTypeID("clearSlices"));
