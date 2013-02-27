@@ -15,4 +15,4 @@ Windows 32bit: C:\Program Files (x86)\Adobe\Adobe Photoshop CS5\Presets\Scripts\
 
 Windows 64bit: C:\Program Files\Adobe\Adobe Photoshop CS5\Presets\Scripts\
 
-OSX: Applications/Adobe\ Photoshop\ CS5.1/Presets/Scripts/
+OSX: /Applications/Adobe\ Photoshop\ CS5.1/Presets/Scripts/
